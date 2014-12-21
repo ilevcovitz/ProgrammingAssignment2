@@ -14,8 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
   set <- function(y){
     ## <<- used to set x which is in the scope of parent functions equal to input y 
     x <<- y
-    ## set inverse to be NULL still as it has not been computed
-    inverse <<- NULL
+    ## set inverse to be blank matrix as this new matrix inverse has not been computed
+    inverse <<- matrix()
   }
   
   ##return matrix
